@@ -1,0 +1,26 @@
+.link{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  
+}
+
+.box {
+  --primary: 146, 37, 218;
+  --color: 44, 62, 80;
+  align-items: center;
+  background: #f1f3f6;
+  height: calc(var(--vh, 1vh)+190);
+  color: rbg(var(--color));
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 35px;
+}
+
+.bienvenida {
+  font-weight: normal;
+  font-size: 1.5rem
+}
+

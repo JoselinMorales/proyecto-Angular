@@ -1,0 +1,19 @@
+<div class="box" >
+  <form class="der-log" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+    <h1 class="login">Iniciar Sesión</h1>
+    <div class="der-input">
+    <label>
+      Nombre usuario
+    </label>
+    <input class="der-input" type="text" formControlName="username" />
+    <label>
+      Contraseña
+    </label>
+    <input class="der-input" type="password" formControlName="password" />
+  </div>
+  <br>
+  <div>
+    <button class="btn-login">Ingresar</button>
+  </div> 
+  </form> 
+  </div>

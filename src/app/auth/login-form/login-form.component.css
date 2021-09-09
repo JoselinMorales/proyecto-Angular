@@ -1,0 +1,63 @@
+.box {
+  --primary: 146, 37, 218;
+  --color: 44, 62, 80;
+  align-items: center;
+  background: #f1f3f6;
+  height: calc(var(--vh, 1vh)+190);
+  color: rbg(var(--color));
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 35px;
+
+}
+
+.btn-login {
+
+  background: rgb(var(--primary));
+  color: rgb(248, 254, 255);
+  border: 10px;
+  border-radius: 20px;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all .25s ease;
+}
+
+.login {
+
+  font-weight: normal;
+  font-size: 1.8rem
+}
+
+.der-input {
+
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px, 20px;
+  border: 0;
+  background: #f1f3f6;
+  border-radius: 18px;
+  border: 2px solid rbg(var(--color));
+  transition: all .25s ease;
+  opacity: .2;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.24);
+  padding-bottom: 20px;
+  width: 100%;
+  opacity: 1;
+  display: block;
+}
+
+
+.der-log {
+
+  width: 109%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 35px;
+  max-width: 400px;
+}

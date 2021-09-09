@@ -1,0 +1,26 @@
+<div class="box">
+<div class="table-header">
+  <label>#</label>
+  <label>Título</label>
+  <label>Código</label>
+  <label>Fecha Inicial</label>
+  <label>Fecha Final</label>
+  <label>Estado </label>
+  <label>HashTags</label>
+  <label>Prioridad</label>
+  <label>Nivel</label>
+  <label>Acciones</label>
+</div>
+<div *ngFor="let task of tasks; let i = index" class="table-row">
+  <span>{{(i + 1)}}</span>
+  <span>{{task.title}}</span>
+  <span>{{task.code}}</span>
+  <span>{{task.start}}</span>
+  <span>{{task.endDate}}</span>
+  <span>{{task.finaly}}</span>
+  <span>{{task.hashT | decoradorhash: '#' }}</span>
+  <span>{{task.priority}}</span>
+  <span>{{task.nivel}}</span>
+  <button class="btn" (click)="deleteTask(task)">Eliminar tarea</button>
+</div>
+</div>

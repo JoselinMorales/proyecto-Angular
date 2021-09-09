@@ -1,0 +1,68 @@
+<div class="box">
+  <form [formGroup]="taskFormGroup" (ngSubmit)="onSubmit()">
+    <span>Nota: Todos los campos son requeridos*</span>
+    <br /><br />
+    <label>Título de la tarea</label>
+    
+    <input type="text" placeholder="Título de la tarea*" formControlName="title">
+    <br /><br />
+
+    <label>Código de la tarea </label>
+    
+    <input type="number" placeholder="Código de la tarea*" formControlName="code">
+    <br /><br />
+
+    <label>Fecha en que se debe iniciar la tarea </label>
+  
+    <input type="date" formControlName="start">
+    <br /><br />
+    <label>Fecha en que se debe terminar la tarea </label>
+   
+    <input type="date" formControlName="endDate">
+    <br /><br />
+    <label>Estado de la tarea </label>
+  
+    <select formControlName="finaly">
+      <option>Creada</option>
+      <option>En Progreso</option>
+      <option>Terminada</option>
+    </select>
+    <br /><br />
+
+    <label>Escribe la palabra que gustes para elaborar un HashTags </label>
+    
+    <input type="text" placeholder="Agrega una palabra*" formControlName="hashT">
+    <br /><br />
+
+    <label>Prioridad de la tarea </label>
+   
+    <select formControlName="priority">
+
+      <option>Crítica</option>
+      <option>Alta</option>
+      <option>Media</option>
+      <option>Baja</option>
+      <option>Muy Baja</option>
+    </select>
+
+    <br /><br />
+
+    <label>Nivel de complejidad de la tarea </label>
+    <select formControlName="nivel">
+
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+    <br /><br />
+
+    <button [disabled]='!taskFormGroup.valid' type='submit'>Agregar Tarea</button>
+  </form>
+</div>
